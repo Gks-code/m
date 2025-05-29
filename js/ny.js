@@ -54,11 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     btnComprar.addEventListener('click', function () {
         const total = numerosSelecionados.length * valorPorNumero;
-        const mensagem = `Olá! Gostaria de comprar os números ${numerosSelecionados.join(', ')} da rifa. Total: R$ ${total.toFixed(2)}. Como proceder?
-                nome:
-                instagram:
-                telefone:
-                `;
+        const mensagem = `Olá! Gostaria de comprar os números ${numerosSelecionados.join(', ')} da rifa. Total: R$ ${total.toFixed(2)}. Como proceder`;
 
         // Atualiza os números vendidos no localStorage
         numerosVendidos = [...numerosVendidos, ...numerosSelecionados];
